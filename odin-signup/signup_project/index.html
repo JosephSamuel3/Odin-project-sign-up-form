@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      
-      <div class="bg-image">
-        <div class="logo-div"> 
-          <img src="" alt="odin-logo" class="logo-img">
-          <p>ODIN</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Odin Sign Up Page</title>
+</head>
+<body>
+  <div class="side-hero">
+    <div class="logo-container">
+      <img src="images/odin-lined.png" alt="Odin-logo" class="logo">
+      <p>ODIN</p>
+    </div>
+    <span class="background-credit">Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Halie West</a> on 
+      <a href="https://unsplash.com/">Unsplash</a></span>
+  </div>
+  <div class="main-container">
+    <div class="messages">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+      <p>Let's do this!</p>
+    </div>
+    <form action="#" method="post" id="sign-up">
+      <div class="input-row">
+        <div class="input-div">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        
+        <div class="input-div">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last-name">
         </div>
       </div>
-
-      <div class="form-content">
-        <p>This is not a real online service! You know you want something like this in your life
-          to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to</p>
+      <div class="input-row">
+        <div class="input-div">
+          <label for="email">EMAIL</label>
+          <input type="text" id="email" name="email">
+        </div>
         
-        <form action="#">
-          <p>Let's do this!</p>
-
-          <div class="name-div">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" required/>
-
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" required/>
-          </div>
-
-          <div class="info-div">
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email"  required/>
-
-            <label for="number">NUMBER</label>
-            <input type="text" id="number" name="number" />
-          </div>
-
-          <div class="password-div">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" required/>
-
-            <label for="confirm-password">CONFRIM PASSWORD</label>
-            <input type="password" id="confirm-password" name="confrim-password" required/>
-          </div>
-
-          <button type="submit" class="submit-btn">Create Account</button>
-          <p class="login-msg">Already have an account? <a href="#">Log in</a></p>
-        </form>
-
+        <div class="input-div">
+          <label for="phone-number">PHONE NUMBER</label>
+          <input type="text" id="phone-number" name="phone-number">
+        </div>
       </div>
+      <div class="input-row">
+        <div class="input-div">
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+        </div>
+        
+        <div class="input-div">
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>  
+        </div>
+      </div>
+    </form>
+    <div class="button-container" for="sign-up">
+      <button type="submit">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
     </div>
-  </body>
+  </div>
+</body>
 </html>
